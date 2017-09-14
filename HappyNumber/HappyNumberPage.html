@@ -3,11 +3,25 @@
 <head>
   <meta charset="utf-8">
   <title>Is Number Happy?</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div align="center">
-    <input id="textBox" type="text" placeholder="Insert your number here"></input>
-    <button id="button">Check!</button>
+  <div id="description">
+    <p>
+      Счастливые числа - это те числа, которые в результате ряда преобразований вида
+      "сумма квадратов входящих цифр" превратятся в единицу.
+    </p>
+    <p>Например:</p>
+    <p>7 => 7^2 = 49, 49 => 4^2 + 9^2 = 16 + 81 = 97, 97 =>
+      9^2 + 7^2 = 81 + 49 = 130, 130 =>
+      1^2 + 3^2 + 0^2 = 10, 10 => 1^2 + 0^2 = 1.
+    </p>
+    <p>Следовательно число 7 - счастливое.</p>
+    <p>Введите число и проверьте, счастливое ли оно.</p>
+  </div>
+  <div id="checkButton" align="center">
+    <input id="textBox" type="text" placeholder="Введите число"></input>
+    <button id="button">Проверить!</button>
   </div>
   <div id="ansverContainer" align="center">
   </div>
